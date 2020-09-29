@@ -1,0 +1,18 @@
+var edad =35
+console.log(`${edad}`)
+edad +=1
+console.log(`${edad}`)
+edad++
+console.log(`${edad}`)
+
+
+edad--
+console.log(`${edad}`)
+
+var precioVino = 20.50
+var total = precioVino * 1.12
+console.log(` El precio del Vino   ${precioVino}   Precio del Vino con IVA   ${total}`)
+
+var promedio =15.6
+var promedioTotal =Math.round(promedio)
+console.log(`${promedioTotal}`)
