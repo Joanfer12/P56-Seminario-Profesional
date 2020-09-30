@@ -77,13 +77,14 @@ return objeto
  console.log(personasCm)
 
 // VER LA CANTIDAD DE LIBROS EN TOTAL 
+// Mediante el uso de forof 
 var sum = 0
 for ( persona of personas) {
        sum += persona.cantidadLibros  
  }
- console.log(`La camtidad de libros es: ${sum}`)
+ console.log(`La cantidad de libros es: ${sum}`)
 
 //Uso de la función 'Reduce' en arreglos 
- //const contabilizarLibros = (acum, cantidadLibros) => acum + cantidadLibros
- //var CanLibros = personas.reduce(contabilizarLibros, 0 )
- //console.log(`La cantidad total de libros es ${CanLibros}`)
+ const contabilizarLibros = (acum, cantidadLibros) => acum + cantidadLibros
+ var CanLibros = personas.reduce(contabilizarLibros, 0 )
+ console.log(`La cantidad total de libros es ${CanLibros}`)
